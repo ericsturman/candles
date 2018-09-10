@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 
 import stockDataClient
 import sp500data
@@ -25,15 +25,15 @@ for stock in dow30data:
     dragonflyDoji = talib.CDLDRAGONFLYDOJI(o,h,l,c)
     doji = talib.CDLDOJI(o,h,l,c)
 
-    print("long line:     " + str(longLine))
-    print("short line:    " + str(shortLine))
-    print("takuri:        " + str(takuri))
-    print("spinning top:  " + str(spinningTop))
-    print("long legged:   " + str(longLeggedDoji))
-    print("high wave:     " + str(highWave))
-    print("gravestone:    " + str(gravestoneDoji))
-    print("dragon fly:    " + str(dragonflyDoji))
-    print("doji:          " + str(doji))
+    print("long line:     " + str(longLine[len(longLine)-1]))
+    print("short line:    " + str(shortLine[len(shortLine)-1]))
+    print("takuri:        " + str(takuri[len(takuri)-1]))
+    print("spinning top:  " + str(spinningTop[len(spinningTop)-1]))
+    print("long legged:   " + str(longLeggedDoji[len(longLeggedDoji)-1]))
+    print("high wave:     " + str(highWave[len(highWave)-1]))
+    print("gravestone:    " + str(gravestoneDoji[len(gravestoneDoji)-1]))
+    print("dragon fly:    " + str(dragonflyDoji[len(dragonflyDoji)-1]))
+    print("doji:          " + str(doji[len(doji)-1]))
 
 
 
